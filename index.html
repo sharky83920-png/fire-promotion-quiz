@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>消防升官等刷題</title>
 <meta name="description" content="115年警察人員升官等考試（消防警正）選擇題：考古題＋修法新題">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<meta name="theme-color" content="#16466B">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="升官等刷題">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700&family=JetBrains+Mono:wght@500&display=swap">
@@ -124,6 +132,10 @@ h1,h2{text-wrap:balance;margin:0}
 .breakdown div:first-child{border-top:none}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 16px;border-radius:8px;font-size:.85rem;z-index:20}
 @media (max-width:420px){.grid{grid-template-columns:repeat(8,1fr)}.stem{font-size:1.05rem}}
+@media (display-mode:standalone){
+  body{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+  .qbar{top:0}
+}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
